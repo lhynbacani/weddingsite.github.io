@@ -1,0 +1,573 @@
+/* For body */
+*{
+    padding: 0;
+    margin: 0;   
+    box-sizing: border-box;    
+}
+
+/* Header (image) */
+.header{
+    min-height: 105vh;
+    width: 100%;
+    background-image:url(/images/main.jpg) ; 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+/* navigation bar */
+nav{
+    display: flex;
+    align-items: center;
+   
+}
+/* Logo sizing */
+nav img{
+    width: 100px;
+    margin-left: 60px;
+}
+
+/* Navigation Llinks */
+.nav-links{
+    flex: 1;
+    text-align: right;
+    padding-right: 5%; 
+}
+/* Bullet */
+.nav-links ul li { 
+    list-style: none; 
+    display: inline-block ; 
+    padding: 8px, 12px; 
+    position: relative; 
+    margin: 0 1em;
+    
+        } 
+  
+/* Removing of underline and change color of links */
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* nav menu hover effects */
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+/* three images (flexbox) */
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+
+}
+
+ /* We are together image--> */
+
+.secondimage{
+    min-height: 180svh;
+    width: 100%;
+    background-image:url(/images/holdinghands.jpg) ; 
+    margin-bottom: 2%;
+  
+} 
+
+#together{
+    text-align: center;
+    padding-top: 10%;
+    font-size: x-large;
+    
+}
+
+/* Our Love Story Section */
+.lovestory{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom:50px;
+}
+
+.text-box h2{
+    margin-left: 25px;
+    font-size: 40px;
+}
+
+.text-box p{
+    margin-left: 25px;
+    font-size: 25px;
+}
+
+.wrapper1{
+    display: flex;
+    justify-content: space-between;
+}
+img.plaza{
+    height: 25%;
+    width: 25%;
+    margin-left: 250px;
+}
+
+.text-box{
+    margin-right: 250px;
+
+}
+
+.wrapper2{
+    display: flex;
+    justify-content: space-between;
+}
+
+img.bonfire{
+    height: 25%;
+    width: 25%;
+    margin-right: 250px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.text-box2{
+    margin-left: 250px;
+
+}
+
+.text-box2 h2{
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.text-box2 p{
+    font-size: 25px;
+
+}
+
+
+.wrapper3{
+    display: flex;
+    justify-content: space-between;
+}
+img.ring{
+    height: 25%;
+    width: 25%;
+    margin-left: 250px;
+    margin-top: 30px;  
+}
+
+.text-box3{
+    margin-right: 250px;
+}
+
+.text-box3 h2{
+    margin-top:  30px; 
+    font-size: 40px;
+    margin-left: 15px;
+}
+
+.text-box3 p{
+    margin-top:  30px; 
+    font-size: 25px;
+    margin-left: 15px;
+}
+.wrapper4{
+    display: flex;
+    justify-content: space-between;
+}
+.text-box4{
+    margin-top:100px;
+
+}
+
+.text-box4 h2{
+    font-size: 40px;
+    margin-left: 15px;
+    font-size: 40px;
+
+}
+
+.text-box4 p{
+    font-size: 25px;
+    margin-left: 15px;
+   
+
+}
+/* carousel */
+
+.bestmoment{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+#friends{
+    margin-top: 50px;
+}
+
+
+  
+/* Removing of underline and change color of links */
+.nav-linksfooter ul li a{
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* nav menu hover effects */
+
+.nav-linksfooter ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-linksfooter ul li:hover::after{
+    width: 100%;
+}
+.footersection{
+
+    padding-top: 20%;
+}
+
+
+
+img.holdinghands{
+    height: 25%;
+    width: 25%;
+    margin-right: 250px;
+}
+
+
+.text-box4{
+    margin-left: 250px;
+
+}
+
+
+
+.bestmoment{
+    text-align: center;
+    font-size: 50px;
+}
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	float: left;
+	width: 20%;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	 70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	} 
+}
+
+
+/* Our Friends*/
+.friends{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800%;
+    margin: 0px 120px;
+    padding: 25px;
+    justify-content: center; 
+  
+}
+
+
+
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+}
+
+ .mytabs .tab {
+    width: 100%;
+    padding: 5px;
+    background: #fff;
+    order: 1;
+    display: none;
+   
+}
+
+ 
+
+.touchshoulder {
+    position: relative;
+    display: flex;   
+
+}
+
+.touchshoulder .bibleverse {
+justify-content: center;
+align-items: center;
+display: flex;
+color: #fff;
+position: absolute;
+margin-top: 200px;
+font-size: 25px;
+
+}
+
+.touchshoulder p {
+   top: 0px; left: 0; right: 0; transform: translate(0, -50%); text-align: center; color: #131212; text-shadow: 0 0 15px;}
+
+
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}
+
+
+.prenup{
+text-align: center;
+    font-size: 50px;
+}
+.wrapperprenup{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+
+}
+
+#picture1{
+    width: 400px;
+    height:400px;
+}
+
+#picture2{
+    width: 400px;
+    height:400px;
+}
+
+#picture3{
+    width: 400px;
+    height:400px;
+}
+
+
+.lastimage{ 
+    min-height: 105vh;
+    width: 100%;
+    background-image:url(/images/lastimage.jpg) ; 
+    margin-bottom: 2%;
+}
+
+ .buttonmore{
+        display:block;
+        margin: auto;
+        height:45px;
+        width: 100px;
+        margin-bottom: 50px;
+    
+}
+
+
+/* Registry Form */
+.rsvpform .hugpicture {
+    position: relative;
+    display: flex;
+    min-height: 105vh;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+
+
+input [type=text] {
+  color: violet;
+  font-size: ;
+  width: ;
+}
+
+form p {
+  font-size: 18px;
+  margin-bottom: 5px;
+  justify-content: center;
+
+}
+
+/* Does not properly style text: */
+input[type="radio"] {
+  color: purple;
+  font-size: 16px; 
+}
+
+
+
+.prenup{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+#prenup{
+    text-decoration: none;
+}
+
+
+/* -- Gallery Section Start From here -- */
+
+/* Footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+
+
